@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Структура сайта педагога</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fdfdff);
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      background: #e91e63;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    nav {
+      margin: 15px 0 25px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 8px 14px;
+      color: #e91e63;
+      border: 1px solid #e91e63;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    nav a:hover { background: #e91e63; color: #fff; }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+    .label {
+      background: #f06292;
+      color: #fff;
+      padding: 15px;
+      min-width: 160px;
+      border-radius: 8px 0 0 8px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content {
+      background: #ff658f;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 0 8px 8px 0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      .section { flex-direction: column; }
+      .label, .content {
+        border-radius: 8px;
+        margin-bottom: 6px;
+      }
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      text-align: center;
+      color: #666;
+    }
+    footer a { color: #e91e63; text-decoration: none; }
+  </style>
+</head>
+<body>
+<header id="top">
+  <h1>Структура сайта педагога</h1>
+</header>
+
+<nav>
+  <a href="#you">Для вас</a>
+  <a href="#parents">Для родителей</a>
+  <a href="#colleagues">Для коллег</a>
+  <a href="#guests">Для случайных посетителей</a>
+</nav>
+
+<section id="you" class="section">
+  <div class="label">Для вас</div>
+  <div class="content">Портфолио, конспекты, свои методические наработки.</div>
+</section>
+
+<section id="parents" class="section">
+  <div class="label">Для родителей</div>
+  <div class="content">Советы, рекомендации.</div>
+</section>
+
+<section id="colleagues" class="section">
+  <div class="label">Для коллег</div>
+  <div class="content">Уникальный методический материал.</div>
+</section>
+
+<section id="guests" class="section">
+  <div class="label">Для случайных посетителей</div>
+  <div class="content">Стиль, оформление, грамотность, профессионализм.</div>
+</section>
+
+<footer>
+  <p>Контакты педагога: <a href="mailto:example@mail.ru">example@mail.ru</a></p>
+</footer>
+</body>
+</html>
